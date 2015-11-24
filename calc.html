@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A (Seriously) Simple Calculator</title>
+<link rel="stylesheet" href="./foundation.css" />
+<link rel="stylesheet" type="text/css" href="./calc_css.css">
+
+</head>
+<body>
+<form method="post" attribute="post" action="calc1.php">
+
+<div class = "row">
+
+	<div class = "large-6 medium-6 columns">
+		<label class = "label_a">First number: (up to 10 decimal places)</label>
+		<input type="number" id="first" name="first" step="0.0000000001">
+	</div>
+
+	<div class = "large-6 medium-6 columns">
+		<label class = "label_a">Second number: (up to 10 decimal places)</label>
+		<input type="number" id="second" name="second" step="0.0000000001">
+	</div>
+
+</div>
+
+<div class = "row">
+
+	<div class = "large-3 columns">
+		<p class = "operand">+ <input type="radio" name="operation" id="add" value="add" checked="true"></p><br/>
+	</div>
+	<div class = "large-3 columns">	
+		<p class = "operand">– <input type="radio" name="operation" id="subtract" value="subtract"></p><br/>
+	</div>
+	<div class = "large-3 columns">
+		<p class = "operand">x <input type="radio" name="operation" id="multiply" value="multiply"></p><br/>
+	</div>
+	<div class = "large-3 columns">
+		<p class = "operand">/ <input type="radio" name="operation" id="divide" value="divide"></p><br/>
+	</div>
+
+</div>
+
+<div class = "row">
+
+	<div class = "large-5 columns"><p></p></div>
+	<div class = "large-2 columns">
+		<button type="submit" name="answer" id="answer" value="answer">Calculate</button>
+	</div>
+	<div class = "large-5 columns"><p></p></div>
+</div>
+
+</form>
+</body>
+</html>
